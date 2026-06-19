@@ -1,0 +1,36 @@
+# Fysik_simuleringer
+
+Lærer at lave fysik simuleringer
+
+## Setup
+
+```bash
+uv sync --dev
+```
+
+## Commands
+
+```bash
+uv run ruff check .
+uv run ruff format .
+uv run ty check
+uv run pytest
+```
+
+## Optional Extras
+
+```bash
+uv sync --extra plot
+uv sync --extra ml
+uv sync --extra torch
+uv sync --all-extras
+```
+
+## Versioning
+
+This project uses Git tags as the package version source.
+
+```bash
+git tag -a v0.1.0 -m "Release v0.1.0"
+git push origin v0.1.0
+```
