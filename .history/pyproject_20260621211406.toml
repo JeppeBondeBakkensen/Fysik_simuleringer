@@ -73,10 +73,10 @@ select = [
     "F",   # pyflakes
     "I",   # import sorting
     "B",   # flake8-bugbear
-    "UP",  # upgrade
+    "UP",  # pyupgrade
     "SIM", # simplify
 ]
-ignore = ["I001", "F401"]
+ignore = ["I001"]
 
 [tool.ruff.format]
 quote-style = "double"
