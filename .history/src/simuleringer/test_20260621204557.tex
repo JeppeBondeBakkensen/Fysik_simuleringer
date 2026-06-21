@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage[x11names]{xcolor}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{parskip}
+\usepackage{graphicx} % in preamble
+\title{Videnskabsteori noter}
+\author{Jeppe Bonde Bakkensen}
+\date{\today}
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{references.bib}
+
+\definecolor{myred}{RGB}{155,35,35}
+\newcommand{\kw}[1]{\textcolor{myred}{#1}}
+
+% Superscript citation number
+\DeclareCiteCommand{\supercite}[\mkbibsuperscript]
+{\usebibmacro{prenote}}
+{\usebibmacro{citeindex}\usebibmacro{cite}}
+{\multicitedelim}
+{\usebibmacro{postnote}}
+
+% Superscript citation + visible page number in text
+\newcommand{\pagecite}[2]{\supercite{#1}~(#2)}
+
+\begin{document}
+
+\maketitle
+
+test
+\end{document}

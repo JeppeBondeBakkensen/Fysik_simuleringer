@@ -10,7 +10,12 @@ requires-python = ">=3.12"
 # Defines the list of packages that are required for the project,
 # along with the version constraints that should be used when installing them.
 # Example: uv sync
-dependencies = ["numpy>=2.4.6", "scipy>=1.17.1", "sympy>=1.14.0"]
+dependencies = [
+    "numpy>=2.4.6",
+    "pyglet>=2.1.14",
+    "scipy>=1.17.1",
+    "sympy>=1.14.0",
+]
 
 [project.urls]
 Repository = "https://github.com/JeppeBondeBakkensen/Fysik_simuleringer"
@@ -20,7 +25,12 @@ Issues = "https://github.com/JeppeBondeBakkensen/Fysik_simuleringer/issues"
 # Example: uv sync --extra plot
 # Example: uv sync --all-extras
 [project.optional-dependencies]
-plot = ["matplotlib>=3.6.3", "seaborn>=0.13.2", "polars>=1.41.2"]
+plot = [
+    "matplotlib>=3.6.3",
+    "seaborn>=0.13.2",
+    "polars>=1.41.2",
+    "manim>=0.20.1",
+]
 ml = ["scikit-learn>=1.9.0"]
 torch = ["torch>=2.12.1", "torchvision>=0.27.1"]
 
